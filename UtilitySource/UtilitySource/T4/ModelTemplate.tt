@@ -1,0 +1,81 @@
+﻿<#@ template  debug="false"   hostspecific="true" language="C#" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ assembly name="System.Data.dll" #>
+<#@ assembly name="System.Data.DataSetExtensions.dll" #>
+<#@ assembly name="System.Xml.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.Xml" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Data" #>
+<#@ import namespace="System.Data.SqlClient" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.IO" #>
+<#@ include file="DBHelper.tt" #>
+<#@ include file="MultipleOutputHelper.tt" #>
+
+<#
+    var manager = Manager.Create(Host, GenerationEnvironment,Config.ProjectName,Config.DirectoryName,Config.IsOverWrite);
+    foreach(DbTable table in DbHelper.GetDbTables(Config.ConnString, Config.DataCategory)) 
+    { 
+	    manager.StartNewFile(UpperInitial(table.TableName)+".cs"); 
+#>
+using System;
+namespace <#= Config.ProjectName #>
+{	
+	/// <summary>
+	/// 实体-<#=UpperInitial(table.TableName)#>-<# if(!string.IsNullOrEmpty(table.TableDescription)){#><#= UpperInitial(table.TableDescription) #><#}#>
+	/// </summary>
+	public partial class <#=UpperInitial(table.TableName)#>
+    {
+		<# foreach(DbColumn column in DbHelper.GetDbColumns(Config.ConnString, Config.DataCategory, table.TableName)){#>
+
+		/// <summary>
+		/// <#=column.Remark#>
+		/// </summary>	
+		public <#= column.CSharpType#><# if(column.CommonType.IsValueType && column.IsNullable){#>?<#}#> <#=UpperInitial(column.ColumnName)#> { get; set; }<#if(column.CSharpType =="string"){#><#} else if(column.CSharpType == "bool"){ #><# if(column.DataDefault=="1"){#>  = true;	<#} else if(column.IsNullable&&column.DataDefault=="0") {#>  = false; <#}#><#} else if(column.CSharpType == "DateTime") {if(!column.IsNullable||column.DataDefault!="NULL") {#>  = DateTime.Now;<#}} else if(column.DataDefault!="NULL"){#>  = <#=column.DataDefault=="0.0"?"0":column.DataDefault#>;<#}#>
+		<#}#> 
+		
+    }
+}
+
+
+<#
+        manager.EndBlock();    
+    }            
+    manager.Process(true);  
+#>
+
+<#+
+	/// <summary>
+    /// 配置类
+    /// </summary>
+    public class Config
+    {
+        /// <summary>
+        /// 连接字符串
+        /// </summary>
+        public static string ConnString = "";
+        /// <summary>
+        /// 目标方案名称
+        /// </summary>
+        public static string DataCategory = "";
+        /// <summary>
+        /// 目标方案名称
+        /// </summary>
+        public static string ProjectName = "";
+        /// <summary>
+        /// 目标目录名称
+        /// </summary>
+        public static string DirectoryName = "";
+        /// <summary>
+        /// 是否重写现有文件
+        /// </summary>
+        public static bool IsOverWrite = true;
+    }
+
+    /// <summary>
+    /// 首字母大写
+    /// </summary>
+	private string UpperInitial(string name)
+	{ return name[0].ToString().ToUpperInvariant() + name.Substring(1); }
+#>

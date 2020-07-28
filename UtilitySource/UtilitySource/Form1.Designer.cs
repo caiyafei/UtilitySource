@@ -28,71 +28,105 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.popupContainerEdit1 = new DevExpress.XtraEditors.PopupContainerEdit();
-            this.popupContainerControl1 = new DevExpress.XtraEditors.PopupContainerControl();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            ((System.ComponentModel.ISupportInitialize)(this.popupContainerEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupContainerControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            this.components = new System.ComponentModel.Container();
+            this.documentManager1 = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
+            this.widgetView1 = new DevExpress.XtraBars.Docking2010.Views.Widget.WidgetView(this.components);
+            this.rowDefinition1 = new DevExpress.XtraBars.Docking2010.Views.Widget.RowDefinition();
+            this.rowDefinition2 = new DevExpress.XtraBars.Docking2010.Views.Widget.RowDefinition();
+            this.rowDefinition3 = new DevExpress.XtraBars.Docking2010.Views.Widget.RowDefinition();
+            this.columnDefinition1 = new DevExpress.XtraBars.Docking2010.Views.Widget.ColumnDefinition();
+            this.columnDefinition2 = new DevExpress.XtraBars.Docking2010.Views.Widget.ColumnDefinition();
+            this.columnDefinition3 = new DevExpress.XtraBars.Docking2010.Views.Widget.ColumnDefinition();
+            this.columnDefinition4 = new DevExpress.XtraBars.Docking2010.Views.Widget.ColumnDefinition();
+            this.columnDefinition5 = new DevExpress.XtraBars.Docking2010.Views.Widget.ColumnDefinition();
+            this.uC_ItemDocument = new DevExpress.XtraBars.Docking2010.Views.Widget.Document(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.widgetView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rowDefinition1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rowDefinition2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rowDefinition3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.columnDefinition1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.columnDefinition2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.columnDefinition3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.columnDefinition4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.columnDefinition5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uC_ItemDocument)).BeginInit();
             this.SuspendLayout();
             // 
-            // popupContainerEdit1
+            // documentManager1
             // 
-            this.popupContainerEdit1.Location = new System.Drawing.Point(121, 145);
-            this.popupContainerEdit1.Name = "popupContainerEdit1";
-            this.popupContainerEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.popupContainerEdit1.Size = new System.Drawing.Size(100, 20);
-            this.popupContainerEdit1.TabIndex = 0;
+            this.documentManager1.ContainerControl = this;
+            this.documentManager1.View = this.widgetView1;
+            this.documentManager1.ViewCollection.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseView[] {
+            this.widgetView1});
             // 
-            // popupContainerControl1
+            // widgetView1
             // 
-            this.popupContainerControl1.Location = new System.Drawing.Point(146, 267);
-            this.popupContainerControl1.Name = "popupContainerControl1";
-            this.popupContainerControl1.Size = new System.Drawing.Size(200, 100);
-            this.popupContainerControl1.TabIndex = 1;
+            this.widgetView1.AllowDocumentStateChangeAnimation = DevExpress.Utils.DefaultBoolean.True;
+            this.widgetView1.AllowDragDropWobbleAnimation = DevExpress.Utils.DefaultBoolean.False;
+            this.widgetView1.Columns.AddRange(new DevExpress.XtraBars.Docking2010.Views.Widget.ColumnDefinition[] {
+            this.columnDefinition1,
+            this.columnDefinition2,
+            this.columnDefinition3,
+            this.columnDefinition4,
+            this.columnDefinition5});
+            this.widgetView1.Documents.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseDocument[] {
+            this.uC_ItemDocument});
+            this.widgetView1.DocumentSpacing = 10;
+            this.widgetView1.LayoutMode = DevExpress.XtraBars.Docking2010.Views.Widget.LayoutMode.TableLayout;
+            this.widgetView1.RootContainer.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.widgetView1.Rows.AddRange(new DevExpress.XtraBars.Docking2010.Views.Widget.RowDefinition[] {
+            this.rowDefinition1,
+            this.rowDefinition2,
+            this.rowDefinition3});
+            this.widgetView1.Style = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Light;
             // 
-            // gridControl1
+            // uC_ItemDocument
             // 
-            this.gridControl1.Location = new System.Drawing.Point(259, 68);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(400, 200);
-            this.gridControl1.TabIndex = 2;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
+            this.uC_ItemDocument.Caption = "UC_Item";
+            this.uC_ItemDocument.ControlName = "UC_Item";
+            this.uC_ItemDocument.ControlTypeName = "UtilitySource.UC_Item";
+            this.uC_ItemDocument.Properties.AllowDragging = DevExpress.Utils.DefaultBoolean.False;
+            this.uC_ItemDocument.Properties.ShowBorders = DevExpress.Utils.DefaultBoolean.False;
+            this.uC_ItemDocument.Properties.ShowCloseButton = DevExpress.Utils.DefaultBoolean.False;
+            this.uC_ItemDocument.Properties.ShowMaximizeButton = DevExpress.Utils.DefaultBoolean.False;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.gridControl1);
-            this.Controls.Add(this.popupContainerControl1);
-            this.Controls.Add(this.popupContainerEdit1);
+            this.ClientSize = new System.Drawing.Size(1103, 603);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.popupContainerEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupContainerControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.widgetView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rowDefinition1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rowDefinition2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rowDefinition3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.columnDefinition1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.columnDefinition2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.columnDefinition3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.columnDefinition4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.columnDefinition5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uC_ItemDocument)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DevExpress.XtraEditors.PopupContainerEdit popupContainerEdit1;
-        private DevExpress.XtraEditors.PopupContainerControl popupContainerControl1;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraBars.Docking2010.DocumentManager documentManager1;
+        private DevExpress.XtraBars.Docking2010.Views.Widget.WidgetView widgetView1;
+        private DevExpress.XtraBars.Docking2010.Views.Widget.Document document1;
+        private DevExpress.XtraBars.Docking2010.Views.Widget.ColumnDefinition columnDefinition1;
+        private DevExpress.XtraBars.Docking2010.Views.Widget.ColumnDefinition columnDefinition2;
+        private DevExpress.XtraBars.Docking2010.Views.Widget.ColumnDefinition columnDefinition3;
+        private DevExpress.XtraBars.Docking2010.Views.Widget.ColumnDefinition columnDefinition4;
+        private DevExpress.XtraBars.Docking2010.Views.Widget.ColumnDefinition columnDefinition5;
+        private DevExpress.XtraBars.Docking2010.Views.Widget.RowDefinition rowDefinition1;
+        private DevExpress.XtraBars.Docking2010.Views.Widget.RowDefinition rowDefinition2;
+        private DevExpress.XtraBars.Docking2010.Views.Widget.RowDefinition rowDefinition3;
+        private DevExpress.XtraBars.Docking2010.Views.Widget.Document uC_ItemDocument;
     }
 }
 
