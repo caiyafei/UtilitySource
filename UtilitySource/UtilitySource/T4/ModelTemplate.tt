@@ -14,7 +14,7 @@
 <#@ include file="MultipleOutputHelper.tt" #>
 
 <#
-    var manager = Manager.Create(Host, GenerationEnvironment,Config.ProjectName,Config.DirectoryName,Config.IsOverWrite);
+    var manager = MutiOutputManager.Create(Host, GenerationEnvironment,Config.ProjectName,Config.DirectoryName,Config.IsOverWrite);
     foreach(DbTable table in DbHelper.GetDbTables(Config.ConnString, Config.DataCategory)) 
     { 
 	    manager.StartNewFile(UpperInitial(table.TableName)+".cs"); 
@@ -54,19 +54,19 @@ namespace <#= Config.ProjectName #>
         /// <summary>
         /// 连接字符串
         /// </summary>
-        public static string ConnString = "";
+        public static string ConnString = "server=.;database=cyf;uid=sa;pwd=";
+        /// <summary>
+        /// 数据库
+        /// </summary>
+        public static string DataCategory = "CYF";
         /// <summary>
         /// 目标方案名称
         /// </summary>
-        public static string DataCategory = "";
-        /// <summary>
-        /// 目标方案名称
-        /// </summary>
-        public static string ProjectName = "";
+        public static string ProjectName = "UtilitySource";
         /// <summary>
         /// 目标目录名称
         /// </summary>
-        public static string DirectoryName = "";
+        public static string DirectoryName = "CYF";
         /// <summary>
         /// 是否重写现有文件
         /// </summary>
