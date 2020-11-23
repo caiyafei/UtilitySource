@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraBars.Docking.CustomHeaderButtonImageOptions customHeaderButtonImageOptions3 = new DevExpress.XtraBars.Docking.CustomHeaderButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraBars.Docking.CustomHeaderButtonImageOptions customHeaderButtonImageOptions4 = new DevExpress.XtraBars.Docking.CustomHeaderButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraBars.Docking.CustomHeaderButtonImageOptions customHeaderButtonImageOptions1 = new DevExpress.XtraBars.Docking.CustomHeaderButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraBars.Docking.CustomHeaderButtonImageOptions customHeaderButtonImageOptions2 = new DevExpress.XtraBars.Docking.CustomHeaderButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
             this.navPane = new DevExpress.XtraBars.Navigation.NavigationPane();
             this.navPageSecurity = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
@@ -59,20 +59,20 @@
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.navPageSqlSugar = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.txtServer = new DevExpress.XtraEditors.MRUEdit();
-            this.txtUid = new DevExpress.XtraEditors.MRUEdit();
-            this.txtPwd = new DevExpress.XtraEditors.ButtonEdit();
-            this.txtCategory = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
-            this.btnInsert = new DevExpress.XtraEditors.SimpleButton();
-            this.btnUpdate = new DevExpress.XtraEditors.SimpleButton();
-            this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.gcList = new DevExpress.XtraGrid.GridControl();
             this.gvList = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
+            this.btnUpdate = new DevExpress.XtraEditors.SimpleButton();
+            this.btnInsert = new DevExpress.XtraEditors.SimpleButton();
+            this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
+            this.txtCategory = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.txtPwd = new DevExpress.XtraEditors.ButtonEdit();
+            this.txtUid = new DevExpress.XtraEditors.MRUEdit();
+            this.txtServer = new DevExpress.XtraEditors.MRUEdit();
             ((System.ComponentModel.ISupportInitialize)(this.navPane)).BeginInit();
             this.navPane.SuspendLayout();
             this.navPageSecurity.SuspendLayout();
@@ -95,13 +95,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             this.navPageSqlSugar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtServer.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtUid.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPwd.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCategory.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCategory.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPwd.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtUid.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtServer.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // navPane
@@ -127,10 +127,10 @@
             this.navPageSecurity.Caption = "密保信息";
             this.navPageSecurity.Controls.Add(this.layoutControl1);
             this.navPageSecurity.CustomHeaderButtons.AddRange(new DevExpress.XtraBars.Docking2010.IButton[] {
-            new DevExpress.XtraBars.Docking.CustomHeaderButton("保存", true, customHeaderButtonImageOptions3, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, serializableAppearanceObject3, null, -1),
-            new DevExpress.XtraBars.Docking.CustomHeaderButton("修改", true, customHeaderButtonImageOptions4, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, serializableAppearanceObject4, null, -1)});
+            new DevExpress.XtraBars.Docking.CustomHeaderButton("保存", true, customHeaderButtonImageOptions1, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, serializableAppearanceObject1, null, -1),
+            new DevExpress.XtraBars.Docking.CustomHeaderButton("修改", true, customHeaderButtonImageOptions2, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, serializableAppearanceObject2, null, -1)});
             this.navPageSecurity.Name = "navPageSecurity";
-            this.navPageSecurity.Size = new System.Drawing.Size(772, 462);
+            this.navPageSecurity.Size = new System.Drawing.Size(813, 462);
             this.navPageSecurity.CustomButtonClick += new DevExpress.XtraBars.Docking2010.ButtonEventHandler(this.navPageSecurity_CustomButtonClick);
             // 
             // layoutControl1
@@ -140,7 +140,7 @@
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(772, 462);
+            this.layoutControl1.Size = new System.Drawing.Size(813, 462);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -149,7 +149,7 @@
             this.gcSecurity.Location = new System.Drawing.Point(4, 4);
             this.gcSecurity.MainView = this.gvSecurity;
             this.gcSecurity.Name = "gcSecurity";
-            this.gcSecurity.Size = new System.Drawing.Size(764, 454);
+            this.gcSecurity.Size = new System.Drawing.Size(805, 454);
             this.gcSecurity.TabIndex = 4;
             this.gcSecurity.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvSecurity});
@@ -225,7 +225,7 @@
             this.layoutControlItem1});
             this.Root.Name = "Root";
             this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
-            this.Root.Size = new System.Drawing.Size(772, 462);
+            this.Root.Size = new System.Drawing.Size(813, 462);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1
@@ -233,7 +233,7 @@
             this.layoutControlItem1.Control = this.gcSecurity;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(768, 458);
+            this.layoutControlItem1.Size = new System.Drawing.Size(809, 458);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -243,7 +243,7 @@
             this.navPageEncrypt.Controls.Add(this.layoutControl2);
             this.navPageEncrypt.Name = "navPageEncrypt";
             this.navPageEncrypt.PageText = "密保工具";
-            this.navPageEncrypt.Size = new System.Drawing.Size(772, 462);
+            this.navPageEncrypt.Size = new System.Drawing.Size(813, 462);
             // 
             // layoutControl2
             // 
@@ -255,15 +255,15 @@
             this.layoutControl2.Location = new System.Drawing.Point(0, 0);
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.Root = this.layoutControlGroup1;
-            this.layoutControl2.Size = new System.Drawing.Size(772, 462);
+            this.layoutControl2.Size = new System.Drawing.Size(813, 462);
             this.layoutControl2.TabIndex = 0;
             this.layoutControl2.Text = "layoutControl2";
             // 
             // btnDecry
             // 
-            this.btnDecry.Location = new System.Drawing.Point(346, 239);
+            this.btnDecry.Location = new System.Drawing.Point(364, 239);
             this.btnDecry.Name = "btnDecry";
-            this.btnDecry.Size = new System.Drawing.Size(86, 22);
+            this.btnDecry.Size = new System.Drawing.Size(92, 22);
             this.btnDecry.StyleController = this.layoutControl2;
             this.btnDecry.TabIndex = 7;
             this.btnDecry.Text = "<-- 解密";
@@ -271,9 +271,9 @@
             // 
             // btnEncry
             // 
-            this.btnEncry.Location = new System.Drawing.Point(346, 193);
+            this.btnEncry.Location = new System.Drawing.Point(364, 193);
             this.btnEncry.Name = "btnEncry";
-            this.btnEncry.Size = new System.Drawing.Size(86, 22);
+            this.btnEncry.Size = new System.Drawing.Size(92, 22);
             this.btnEncry.StyleController = this.layoutControl2;
             this.btnEncry.TabIndex = 6;
             this.btnEncry.Text = "加密 -->";
@@ -281,9 +281,9 @@
             // 
             // meTxt2
             // 
-            this.meTxt2.Location = new System.Drawing.Point(444, 4);
+            this.meTxt2.Location = new System.Drawing.Point(468, 4);
             this.meTxt2.Name = "meTxt2";
-            this.meTxt2.Size = new System.Drawing.Size(324, 454);
+            this.meTxt2.Size = new System.Drawing.Size(341, 454);
             this.meTxt2.StyleController = this.layoutControl2;
             this.meTxt2.TabIndex = 5;
             // 
@@ -291,7 +291,7 @@
             // 
             this.meTxt1.Location = new System.Drawing.Point(4, 4);
             this.meTxt1.Name = "meTxt1";
-            this.meTxt1.Size = new System.Drawing.Size(330, 454);
+            this.meTxt1.Size = new System.Drawing.Size(348, 454);
             this.meTxt1.StyleController = this.layoutControl2;
             this.meTxt1.TabIndex = 4;
             // 
@@ -308,7 +308,7 @@
             this.emptySpaceItem2});
             this.layoutControlGroup1.Name = "layoutControlGroup1";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(772, 462);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(813, 462);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem2
@@ -316,53 +316,53 @@
             this.layoutControlItem2.Control = this.meTxt1;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(334, 458);
+            this.layoutControlItem2.Size = new System.Drawing.Size(352, 458);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.meTxt2;
-            this.layoutControlItem3.Location = new System.Drawing.Point(440, 0);
+            this.layoutControlItem3.Location = new System.Drawing.Point(464, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(328, 458);
+            this.layoutControlItem3.Size = new System.Drawing.Size(345, 458);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.btnEncry;
-            this.layoutControlItem4.Location = new System.Drawing.Point(334, 189);
+            this.layoutControlItem4.Location = new System.Drawing.Point(352, 189);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Padding = new DevExpress.XtraLayout.Utils.Padding(10, 10, 2, 12);
-            this.layoutControlItem4.Size = new System.Drawing.Size(106, 36);
+            this.layoutControlItem4.Size = new System.Drawing.Size(112, 36);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.btnDecry;
-            this.layoutControlItem5.Location = new System.Drawing.Point(334, 225);
+            this.layoutControlItem5.Location = new System.Drawing.Point(352, 225);
             this.layoutControlItem5.Name = "layoutControlItem5";
             this.layoutControlItem5.Padding = new DevExpress.XtraLayout.Utils.Padding(10, 10, 12, 2);
-            this.layoutControlItem5.Size = new System.Drawing.Size(106, 36);
+            this.layoutControlItem5.Size = new System.Drawing.Size(112, 36);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(334, 0);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(352, 0);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(106, 189);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(112, 189);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(334, 261);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(352, 261);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(106, 197);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(112, 197);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // navPageSqlSugar
@@ -384,74 +384,37 @@
             this.navPageSqlSugar.Name = "navPageSqlSugar";
             this.navPageSqlSugar.Size = new System.Drawing.Size(813, 462);
             // 
-            // txtServer
+            // labelControl4
             // 
-            this.txtServer.Location = new System.Drawing.Point(97, 18);
-            this.txtServer.Name = "txtServer";
-            this.txtServer.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtServer.Size = new System.Drawing.Size(196, 20);
-            this.txtServer.TabIndex = 0;
+            this.labelControl4.Location = new System.Drawing.Point(30, 140);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(48, 14);
+            this.labelControl4.TabIndex = 12;
+            this.labelControl4.Text = "数据库：";
             // 
-            // txtUid
+            // labelControl3
             // 
-            this.txtUid.Location = new System.Drawing.Point(97, 56);
-            this.txtUid.Name = "txtUid";
-            this.txtUid.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtUid.Size = new System.Drawing.Size(196, 20);
-            this.txtUid.TabIndex = 1;
+            this.labelControl3.Location = new System.Drawing.Point(30, 99);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(44, 14);
+            this.labelControl3.TabIndex = 11;
+            this.labelControl3.Text = "密  码：";
             // 
-            // txtPwd
+            // labelControl2
             // 
-            this.txtPwd.Location = new System.Drawing.Point(97, 96);
-            this.txtPwd.Name = "txtPwd";
-            this.txtPwd.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.txtPwd.Size = new System.Drawing.Size(196, 20);
-            this.txtPwd.TabIndex = 2;
+            this.labelControl2.Location = new System.Drawing.Point(30, 59);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(48, 14);
+            this.labelControl2.TabIndex = 10;
+            this.labelControl2.Text = "用户名：";
             // 
-            // txtCategory
+            // labelControl1
             // 
-            this.txtCategory.Location = new System.Drawing.Point(97, 137);
-            this.txtCategory.Name = "txtCategory";
-            this.txtCategory.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtCategory.Size = new System.Drawing.Size(196, 20);
-            this.txtCategory.TabIndex = 3;
-            // 
-            // memoEdit1
-            // 
-            this.memoEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.memoEdit1.Location = new System.Drawing.Point(376, 3);
-            this.memoEdit1.Name = "memoEdit1";
-            this.memoEdit1.Size = new System.Drawing.Size(417, 455);
-            this.memoEdit1.TabIndex = 4;
-            // 
-            // btnInsert
-            // 
-            this.btnInsert.Location = new System.Drawing.Point(30, 182);
-            this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(75, 23);
-            this.btnInsert.TabIndex = 5;
-            this.btnInsert.Text = "Insert";
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Location = new System.Drawing.Point(122, 182);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
-            this.btnUpdate.TabIndex = 6;
-            this.btnUpdate.Text = "Update";
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Location = new System.Drawing.Point(218, 182);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnDelete.TabIndex = 7;
-            this.btnDelete.Text = "Delete";
+            this.labelControl1.Location = new System.Drawing.Point(30, 21);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(48, 14);
+            this.labelControl1.TabIndex = 9;
+            this.labelControl1.Text = "服务器：";
             // 
             // gcList
             // 
@@ -470,37 +433,74 @@
             this.gvList.GridControl = this.gcList;
             this.gvList.Name = "gvList";
             // 
-            // labelControl1
+            // btnDelete
             // 
-            this.labelControl1.Location = new System.Drawing.Point(30, 21);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(48, 14);
-            this.labelControl1.TabIndex = 9;
-            this.labelControl1.Text = "服务器：";
+            this.btnDelete.Location = new System.Drawing.Point(218, 182);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 7;
+            this.btnDelete.Text = "Delete";
             // 
-            // labelControl2
+            // btnUpdate
             // 
-            this.labelControl2.Location = new System.Drawing.Point(30, 59);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(48, 14);
-            this.labelControl2.TabIndex = 10;
-            this.labelControl2.Text = "用户名：";
+            this.btnUpdate.Location = new System.Drawing.Point(122, 182);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 6;
+            this.btnUpdate.Text = "Update";
             // 
-            // labelControl3
+            // btnInsert
             // 
-            this.labelControl3.Location = new System.Drawing.Point(30, 99);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(44, 14);
-            this.labelControl3.TabIndex = 11;
-            this.labelControl3.Text = "密  码：";
+            this.btnInsert.Location = new System.Drawing.Point(30, 182);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(75, 23);
+            this.btnInsert.TabIndex = 5;
+            this.btnInsert.Text = "Insert";
             // 
-            // labelControl4
+            // memoEdit1
             // 
-            this.labelControl4.Location = new System.Drawing.Point(30, 140);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(48, 14);
-            this.labelControl4.TabIndex = 12;
-            this.labelControl4.Text = "数据库：";
+            this.memoEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.memoEdit1.Location = new System.Drawing.Point(376, 3);
+            this.memoEdit1.Name = "memoEdit1";
+            this.memoEdit1.Size = new System.Drawing.Size(417, 455);
+            this.memoEdit1.TabIndex = 4;
+            // 
+            // txtCategory
+            // 
+            this.txtCategory.Location = new System.Drawing.Point(97, 137);
+            this.txtCategory.Name = "txtCategory";
+            this.txtCategory.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtCategory.Size = new System.Drawing.Size(196, 20);
+            this.txtCategory.TabIndex = 3;
+            // 
+            // txtPwd
+            // 
+            this.txtPwd.Location = new System.Drawing.Point(97, 96);
+            this.txtPwd.Name = "txtPwd";
+            this.txtPwd.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.txtPwd.Size = new System.Drawing.Size(196, 20);
+            this.txtPwd.TabIndex = 2;
+            // 
+            // txtUid
+            // 
+            this.txtUid.Location = new System.Drawing.Point(97, 56);
+            this.txtUid.Name = "txtUid";
+            this.txtUid.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtUid.Size = new System.Drawing.Size(196, 20);
+            this.txtUid.TabIndex = 1;
+            // 
+            // txtServer
+            // 
+            this.txtServer.Location = new System.Drawing.Point(97, 18);
+            this.txtServer.Name = "txtServer";
+            this.txtServer.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtServer.Size = new System.Drawing.Size(196, 20);
+            this.txtServer.TabIndex = 0;
             // 
             // FrmMain
             // 
@@ -534,13 +534,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             this.navPageSqlSugar.ResumeLayout(false);
             this.navPageSqlSugar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtServer.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtUid.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPwd.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCategory.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCategory.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPwd.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtUid.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtServer.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
