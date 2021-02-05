@@ -130,7 +130,7 @@
             new DevExpress.XtraBars.Docking.CustomHeaderButton("保存", true, customHeaderButtonImageOptions1, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, serializableAppearanceObject1, null, -1),
             new DevExpress.XtraBars.Docking.CustomHeaderButton("修改", true, customHeaderButtonImageOptions2, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, serializableAppearanceObject2, null, -1)});
             this.navPageSecurity.Name = "navPageSecurity";
-            this.navPageSecurity.Size = new System.Drawing.Size(813, 462);
+            this.navPageSecurity.Size = new System.Drawing.Size(792, 449);
             this.navPageSecurity.CustomButtonClick += new DevExpress.XtraBars.Docking2010.ButtonEventHandler(this.navPageSecurity_CustomButtonClick);
             // 
             // layoutControl1
@@ -140,7 +140,7 @@
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(813, 462);
+            this.layoutControl1.Size = new System.Drawing.Size(792, 449);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -149,7 +149,7 @@
             this.gcSecurity.Location = new System.Drawing.Point(4, 4);
             this.gcSecurity.MainView = this.gvSecurity;
             this.gcSecurity.Name = "gcSecurity";
-            this.gcSecurity.Size = new System.Drawing.Size(805, 454);
+            this.gcSecurity.Size = new System.Drawing.Size(784, 441);
             this.gcSecurity.TabIndex = 4;
             this.gcSecurity.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvSecurity});
@@ -225,7 +225,7 @@
             this.layoutControlItem1});
             this.Root.Name = "Root";
             this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
-            this.Root.Size = new System.Drawing.Size(813, 462);
+            this.Root.Size = new System.Drawing.Size(792, 449);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1
@@ -233,7 +233,7 @@
             this.layoutControlItem1.Control = this.gcSecurity;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(809, 458);
+            this.layoutControlItem1.Size = new System.Drawing.Size(788, 445);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -243,7 +243,7 @@
             this.navPageEncrypt.Controls.Add(this.layoutControl2);
             this.navPageEncrypt.Name = "navPageEncrypt";
             this.navPageEncrypt.PageText = "密保工具";
-            this.navPageEncrypt.Size = new System.Drawing.Size(813, 462);
+            this.navPageEncrypt.Size = new System.Drawing.Size(792, 449);
             // 
             // layoutControl2
             // 
@@ -255,15 +255,15 @@
             this.layoutControl2.Location = new System.Drawing.Point(0, 0);
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.Root = this.layoutControlGroup1;
-            this.layoutControl2.Size = new System.Drawing.Size(813, 462);
+            this.layoutControl2.Size = new System.Drawing.Size(792, 449);
             this.layoutControl2.TabIndex = 0;
             this.layoutControl2.Text = "layoutControl2";
             // 
             // btnDecry
             // 
-            this.btnDecry.Location = new System.Drawing.Point(364, 239);
+            this.btnDecry.Location = new System.Drawing.Point(355, 234);
             this.btnDecry.Name = "btnDecry";
-            this.btnDecry.Size = new System.Drawing.Size(92, 22);
+            this.btnDecry.Size = new System.Drawing.Size(89, 22);
             this.btnDecry.StyleController = this.layoutControl2;
             this.btnDecry.TabIndex = 7;
             this.btnDecry.Text = "<-- 解密";
@@ -271,9 +271,9 @@
             // 
             // btnEncry
             // 
-            this.btnEncry.Location = new System.Drawing.Point(364, 193);
+            this.btnEncry.Location = new System.Drawing.Point(355, 188);
             this.btnEncry.Name = "btnEncry";
-            this.btnEncry.Size = new System.Drawing.Size(92, 22);
+            this.btnEncry.Size = new System.Drawing.Size(89, 22);
             this.btnEncry.StyleController = this.layoutControl2;
             this.btnEncry.TabIndex = 6;
             this.btnEncry.Text = "加密 -->";
@@ -281,9 +281,9 @@
             // 
             // meTxt2
             // 
-            this.meTxt2.Location = new System.Drawing.Point(468, 4);
+            this.meTxt2.Location = new System.Drawing.Point(456, 4);
             this.meTxt2.Name = "meTxt2";
-            this.meTxt2.Size = new System.Drawing.Size(341, 454);
+            this.meTxt2.Size = new System.Drawing.Size(332, 441);
             this.meTxt2.StyleController = this.layoutControl2;
             this.meTxt2.TabIndex = 5;
             // 
@@ -291,7 +291,7 @@
             // 
             this.meTxt1.Location = new System.Drawing.Point(4, 4);
             this.meTxt1.Name = "meTxt1";
-            this.meTxt1.Size = new System.Drawing.Size(348, 454);
+            this.meTxt1.Size = new System.Drawing.Size(339, 441);
             this.meTxt1.StyleController = this.layoutControl2;
             this.meTxt1.TabIndex = 4;
             // 
@@ -308,7 +308,7 @@
             this.emptySpaceItem2});
             this.layoutControlGroup1.Name = "layoutControlGroup1";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(813, 462);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(792, 449);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem2
@@ -316,53 +316,53 @@
             this.layoutControlItem2.Control = this.meTxt1;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(352, 458);
+            this.layoutControlItem2.Size = new System.Drawing.Size(343, 445);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.meTxt2;
-            this.layoutControlItem3.Location = new System.Drawing.Point(464, 0);
+            this.layoutControlItem3.Location = new System.Drawing.Point(452, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(345, 458);
+            this.layoutControlItem3.Size = new System.Drawing.Size(336, 445);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.btnEncry;
-            this.layoutControlItem4.Location = new System.Drawing.Point(352, 189);
+            this.layoutControlItem4.Location = new System.Drawing.Point(343, 184);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Padding = new DevExpress.XtraLayout.Utils.Padding(10, 10, 2, 12);
-            this.layoutControlItem4.Size = new System.Drawing.Size(112, 36);
+            this.layoutControlItem4.Size = new System.Drawing.Size(109, 36);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.btnDecry;
-            this.layoutControlItem5.Location = new System.Drawing.Point(352, 225);
+            this.layoutControlItem5.Location = new System.Drawing.Point(343, 220);
             this.layoutControlItem5.Name = "layoutControlItem5";
             this.layoutControlItem5.Padding = new DevExpress.XtraLayout.Utils.Padding(10, 10, 12, 2);
-            this.layoutControlItem5.Size = new System.Drawing.Size(112, 36);
+            this.layoutControlItem5.Size = new System.Drawing.Size(109, 36);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(352, 0);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(343, 0);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(112, 189);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(109, 184);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(352, 261);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(343, 256);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(112, 197);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(109, 189);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // navPageSqlSugar
@@ -382,7 +382,7 @@
             this.navPageSqlSugar.Controls.Add(this.txtUid);
             this.navPageSqlSugar.Controls.Add(this.txtServer);
             this.navPageSqlSugar.Name = "navPageSqlSugar";
-            this.navPageSqlSugar.Size = new System.Drawing.Size(813, 462);
+            this.navPageSqlSugar.Size = new System.Drawing.Size(792, 449);
             // 
             // labelControl4
             // 
@@ -420,10 +420,10 @@
             // 
             this.gcList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gcList.Location = new System.Drawing.Point(30, 222);
+            this.gcList.Location = new System.Drawing.Point(30, 209);
             this.gcList.MainView = this.gvList;
             this.gcList.Name = "gcList";
-            this.gcList.Size = new System.Drawing.Size(319, 236);
+            this.gcList.Size = new System.Drawing.Size(298, 236);
             this.gcList.TabIndex = 8;
             this.gcList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvList});
@@ -461,9 +461,9 @@
             // 
             this.memoEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.memoEdit1.Location = new System.Drawing.Point(376, 3);
+            this.memoEdit1.Location = new System.Drawing.Point(355, 3);
             this.memoEdit1.Name = "memoEdit1";
-            this.memoEdit1.Size = new System.Drawing.Size(417, 455);
+            this.memoEdit1.Size = new System.Drawing.Size(417, 442);
             this.memoEdit1.TabIndex = 4;
             // 
             // txtCategory
