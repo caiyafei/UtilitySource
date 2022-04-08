@@ -32,6 +32,8 @@
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.XtraBars.Docking.CustomHeaderButtonImageOptions customHeaderButtonImageOptions2 = new DevExpress.XtraBars.Docking.CustomHeaderButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraBars.Docking.CustomHeaderButtonImageOptions customHeaderButtonImageOptions3 = new DevExpress.XtraBars.Docking.CustomHeaderButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
             this.navPane = new DevExpress.XtraBars.Navigation.NavigationPane();
             this.navPageSecurity = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
@@ -128,7 +130,8 @@
             this.navPageSecurity.Controls.Add(this.layoutControl1);
             this.navPageSecurity.CustomHeaderButtons.AddRange(new DevExpress.XtraBars.Docking2010.IButton[] {
             new DevExpress.XtraBars.Docking.CustomHeaderButton("保存", true, customHeaderButtonImageOptions1, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, serializableAppearanceObject1, null, -1),
-            new DevExpress.XtraBars.Docking.CustomHeaderButton("修改", true, customHeaderButtonImageOptions2, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, serializableAppearanceObject2, null, -1)});
+            new DevExpress.XtraBars.Docking.CustomHeaderButton("修改", true, customHeaderButtonImageOptions2, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, true, serializableAppearanceObject2, null, -1),
+            new DevExpress.XtraBars.Docking.CustomHeaderButton("转移", true, customHeaderButtonImageOptions3, DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", -1, true, null, true, false, false, serializableAppearanceObject3, null, -1)});
             this.navPageSecurity.Name = "navPageSecurity";
             this.navPageSecurity.Size = new System.Drawing.Size(792, 449);
             this.navPageSecurity.CustomButtonClick += new DevExpress.XtraBars.Docking2010.ButtonEventHandler(this.navPageSecurity_CustomButtonClick);

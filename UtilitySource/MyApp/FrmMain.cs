@@ -138,6 +138,13 @@ namespace MyApp
                     gvSecurity.OptionsBehavior.Editable = false;
                     gvSecurity.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.None;
                     break;
+                case "转移":
+                    //DataHelper.Update(gcSecurity.DataSource as TList<Security>);
+                    //gvSecurity.OptionsBehavior.Editable = false;
+                    //gvSecurity.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.None;
+                    SqliteUtils sqliteUtils = new SqliteUtils();
+                    sqliteUtils.Update(gcSecurity.DataSource as TList<Security>);
+                    break;
                 default:
                     break;
             }
